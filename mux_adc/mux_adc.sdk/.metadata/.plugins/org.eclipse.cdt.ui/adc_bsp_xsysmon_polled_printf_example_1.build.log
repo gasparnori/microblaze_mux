@@ -1,0 +1,21 @@
+13:13:14 **** Build of configuration Debug for project adc_bsp_xsysmon_polled_printf_example_1 ****
+make all 
+'Building file: ../src/xsysmon_polled_printf_example.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xsysmon_polled_printf_example.o" -I../../adc_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/xsysmon_polled_printf_example.d" -MT"src/xsysmon_polled_printf_example.o" -o "src/xsysmon_polled_printf_example.o" "../src/xsysmon_polled_printf_example.c"
+'Finished building: ../src/xsysmon_polled_printf_example.c'
+' '
+'Building target: adc_bsp_xsysmon_polled_printf_example_1.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../adc_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "adc_bsp_xsysmon_polled_printf_example_1.elf"  ./src/xsysmon_polled_printf_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: adc_bsp_xsysmon_polled_printf_example_1.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size adc_bsp_xsysmon_polled_printf_example_1.elf  |tee "adc_bsp_xsysmon_polled_printf_example_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23708	    312	   3148	  27168	   6a20	adc_bsp_xsysmon_polled_printf_example_1.elf
+'Finished building: adc_bsp_xsysmon_polled_printf_example_1.elf.size'
+' '
+
+13:13:15 Build Finished (took 337ms)
+

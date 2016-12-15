@@ -1,0 +1,11 @@
+22:59:02 **** Build of configuration Debug for project adc_bsp_xsysmon_extmux_example_1 ****
+make all 
+'Building file: ../src/xsysmon_extmux_example.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xsysmon_extmux_example.o" -I../../adc_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/xsysmon_extmux_example.d" -MT"src/xsysmon_extmux_example.o" -o "src/xsysmon_extmux_example.o" "../src/xsysmon_extmux_example.c"
+../src/xsysmon_extmux_example.c:69:19: fatal error: xintc.h: No such file or directory
+compilation terminated.
+make: *** [src/xsysmon_extmux_example.o] 1 הלקת
+
+22:59:02 Build Finished (took 110ms)
+

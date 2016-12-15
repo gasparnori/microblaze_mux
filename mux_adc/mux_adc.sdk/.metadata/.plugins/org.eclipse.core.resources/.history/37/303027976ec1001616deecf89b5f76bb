@@ -1,0 +1,118 @@
+/*
+ *
+ * Xilinx, Inc.
+ * XILINX IS PROVIDING THIS DESIGN, CODE, OR INFORMATION "AS IS" AS A 
+ * COURTESY TO YOU.  BY PROVIDING THIS DESIGN, CODE, OR INFORMATION AS
+ * ONE POSSIBLE   IMPLEMENTATION OF THIS FEATURE, APPLICATION OR 
+ * STANDARD, XILINX IS MAKING NO REPRESENTATION THAT THIS IMPLEMENTATION 
+ * IS FREE FROM ANY CLAIMS OF INFRINGEMENT, AND YOU ARE RESPONSIBLE 
+ * FOR OBTAINING ANY RIGHTS YOU MAY REQUIRE FOR YOUR IMPLEMENTATION
+ * XILINX EXPRESSLY DISCLAIMS ANY WARRANTY WHATSOEVER WITH RESPECT TO 
+ * THE ADEQUACY OF THE IMPLEMENTATION, INCLUDING BUT NOT LIMITED TO 
+ * ANY WARRANTIES OR REPRESENTATIONS THAT THIS IMPLEMENTATION IS FREE 
+ * FROM CLAIMS OF INFRINGEMENT, IMPLIED WARRANTIES OF MERCHANTABILITY 
+ * AND FITNESS FOR A PARTICULAR PURPOSE.
+ */
+
+/*
+ * 
+ *
+ * This file is a generated sample test application.
+ *
+ * This application is intended to test and/or illustrate some 
+ * functionality of your system.  The contents of this file may
+ * vary depending on the IP in your system and may use existing
+ * IP driver functions.  These drivers will be generated in your
+ * SDK application project when you run the "Generate Libraries" menu item.
+ *
+ */
+
+#include <stdio.h>
+#include "xparameters.h"
+#include "xil_cache.h"
+#include "xgpio.h"
+#include "gpio_header.h"
+#include "xspi.h"
+#include "spi_header.h"
+
+#define RGB_Id  XPAR_AXI_GPIO_0_DEVICE_ID
+#define ADC_Id  XPAR_AXI_GPIO_1_DEVICE_ID
+#define LED_CHANNEL 1
+#define CONTROL_CHANNEL 1
+
+#define BTN_CHANNEL 2
+#define LED_OFF 0x00000000
+#define LED_ON 56
+#define OUTPUT_CHANNEL 0
+#define INPUT_CHANNEL 1
+
+static XGpio RGB_LED;
+static XGpio ADC;
+
+int GPIOInit(XGpio *Gpio, u16 DeviceId){
+	 	if (XGpio_Initialize(Gpio, DeviceId) != XST_SUCCESS) {
+			  return XST_FAILURE;
+		 }
+
+		 /* Set the direction for the signals */
+
+		 XGpio_SetDataDirection(Gpio, LED_CHANNEL, OUTPUT_CHANNEL);
+
+		 //XGpio_SetDataDirection(Gpio, BTN_CHANNEL, INPUT_CHANNEL);
+
+		 XGpio_DiscreteWrite(Gpio, LED_CHANNEL, LED_ON);
+		 return XST_SUCCESS;
+}
+int ADCInit(XGpio *Gpio, u16 DeviceId){
+	 	if (XGpio_Initialize(Gpio, DeviceId) != XST_SUCCESS) {
+			  return XST_FAILURE;
+		 }
+
+		 /* Set the direction for the signals */
+
+		 XGpio_SetDataDirection(Gpio, CONTROL_CHANNEL, OUTPUT_CHANNEL);
+		 XGpio_DiscreteWrite(Gpio, LED_CHANNEL, LED_OFF);
+		 return XST_SUCCESS;
+}
+
+
+void test(){
+	 u32 status;
+     print("\r\nRunning GpioOutputExample() for axi_gpio_0...\r\n");
+	 status = GpioOutputExample(XPAR_AXI_GPIO_0_DEVICE_ID,3);
+	 if (status != 0) {
+	         print("GpioOutputExample FAILED.\r\n");
+	 }
+	 print("\r\nRunning GpioOutputExample() for axi_gpio_1...\r\n");
+	 status = GpioOutputExample(XPAR_AXI_GPIO_1_DEVICE_ID,8);
+	 if (status != 0) {
+		         print("GpioOutputExample FAILED.\r\n");
+		 }
+     print("\r\nRunning GpioOutputExample() for axi_quad_spi_0....\r\n");
+	 status = SpiSelfTestExample(XPAR_AXI_QUAD_SPI_0_DEVICE_ID);
+	 if (status != 0) {
+		         print("GpioOutputExample FAILED.\r\n");
+		 }
+	 print("all passed\r\n");
+}
+int main() 
+{
+   Xil_ICacheEnable();
+   Xil_DCacheEnable();
+   //test();
+
+   int gpiotest=GPIOInit(&RGB_LED, RGB_Id);
+   int adctest=GPIOInit(&RGB_LED, RGB_Id);
+   printf("......\r\n");
+   while(1){
+	   if ( gpiotest == XST_SUCCESS && adctest == XST_SUCCESS) {
+	   	  //if the initialization was succesfull, we can enter the loop
+	   	  	  printf("initialization done :)\r\n");
+	   }
+
+   }
+
+   Xil_DCacheDisable();
+   Xil_ICacheDisable();
+   return 0;
+}

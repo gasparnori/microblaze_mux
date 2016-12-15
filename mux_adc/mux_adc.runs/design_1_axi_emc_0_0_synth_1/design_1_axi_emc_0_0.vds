@@ -1,0 +1,117 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Tue Dec 13 19:48:37 2016
+# Process ID: 6996
+# Current directory: D:/Nora/cmod_a7_projects/blabla/blabla.runs/design_1_axi_emc_0_0_synth_1
+# Command line: vivado.exe -log design_1_axi_emc_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_emc_0_0.tcl
+# Log file: D:/Nora/cmod_a7_projects/blabla/blabla.runs/design_1_axi_emc_0_0_synth_1/design_1_axi_emc_0_0.vds
+# Journal file: D:/Nora/cmod_a7_projects/blabla/blabla.runs/design_1_axi_emc_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_axi_emc_0_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 360.660 ; gain = 150.082
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_emc_0_0' [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ip/design_1_axi_emc_0_0/synth/design_1_axi_emc_0_0.vhd:116]
+INFO: [Synth 8-638] synthesizing module 'axi_emc' [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/af5f/hdl/axi_emc_v3_0_vh_rfs.vhd:3742]
+INFO: [Synth 8-638] synthesizing module 'axi_emc_native_interface' [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/af5f/hdl/axi_emc_v3_0_vh_rfs.vhd:1827]
+INFO: [Synth 8-638] synthesizing module 'axi_emc_addr_gen' [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/af5f/hdl/axi_emc_v3_0_vh_rfs.vhd:614]
+INFO: [Synth 8-256] done synthesizing module 'axi_emc_addr_gen' (1#1) [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/af5f/hdl/axi_emc_v3_0_vh_rfs.vhd:614]
+INFO: [Synth 8-638] synthesizing module 'axi_emc_address_decode' [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/af5f/hdl/axi_emc_v3_0_vh_rfs.vhd:1250]
+INFO: [Synth 8-256] done synthesizing module 'axi_emc_address_decode' (2#1) [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/af5f/hdl/axi_emc_v3_0_vh_rfs.vhd:1250]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f' [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f' [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f' (3#1) [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f' [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f' (4#1) [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f' (5#1) [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'counter_f' [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/af5f/hdl/axi_emc_v3_0_vh_rfs.vhd:241]
+INFO: [Synth 8-256] done synthesizing module 'counter_f' (6#1) [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/af5f/hdl/axi_emc_v3_0_vh_rfs.vhd:241]
+INFO: [Synth 8-256] done synthesizing module 'axi_emc_native_interface' (7#1) [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/af5f/hdl/axi_emc_v3_0_vh_rfs.vhd:1827]
+INFO: [Synth 8-638] synthesizing module 'EMC' [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/8618/hdl/emc_common_v3_0_vh_rfs.vhd:8238]
+INFO: [Synth 8-638] synthesizing module 'ipic_if' [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/8618/hdl/emc_common_v3_0_vh_rfs.vhd:580]
+INFO: [Synth 8-638] synthesizing module 'ld_arith_reg' [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/8618/hdl/emc_common_v3_0_vh_rfs.vhd:161]
+INFO: [Synth 8-638] synthesizing module 'MULT_AND' [D:/Vivado/2016.3/scripts/rt/data/unisim_comp.v:21257]
+INFO: [Synth 8-256] done synthesizing module 'MULT_AND' (8#1) [D:/Vivado/2016.3/scripts/rt/data/unisim_comp.v:21257]
+INFO: [Synth 8-638] synthesizing module 'MUXCY' [D:/Vivado/2016.3/scripts/rt/data/unisim_comp.v:21268]
+INFO: [Synth 8-256] done synthesizing module 'MUXCY' (9#1) [D:/Vivado/2016.3/scripts/rt/data/unisim_comp.v:21268]
+INFO: [Synth 8-638] synthesizing module 'XORCY' [D:/Vivado/2016.3/scripts/rt/data/unisim_comp.v:45340]
+INFO: [Synth 8-256] done synthesizing module 'XORCY' (10#1) [D:/Vivado/2016.3/scripts/rt/data/unisim_comp.v:45340]
+INFO: [Synth 8-638] synthesizing module 'FDRE' [D:/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-256] done synthesizing module 'FDRE' (11#1) [D:/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-256] done synthesizing module 'ld_arith_reg' (12#1) [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/8618/hdl/emc_common_v3_0_vh_rfs.vhd:161]
+INFO: [Synth 8-256] done synthesizing module 'ipic_if' (13#1) [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/8618/hdl/emc_common_v3_0_vh_rfs.vhd:580]
+INFO: [Synth 8-638] synthesizing module 'mem_state_machine' [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/8618/hdl/emc_common_v3_0_vh_rfs.vhd:2190]
+INFO: [Synth 8-256] done synthesizing module 'mem_state_machine' (14#1) [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/8618/hdl/emc_common_v3_0_vh_rfs.vhd:2190]
+INFO: [Synth 8-638] synthesizing module 'addr_counter_mux' [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/8618/hdl/emc_common_v3_0_vh_rfs.vhd:4466]
+INFO: [Synth 8-638] synthesizing module 'ld_arith_reg__parameterized0' [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/8618/hdl/emc_common_v3_0_vh_rfs.vhd:161]
+INFO: [Synth 8-256] done synthesizing module 'ld_arith_reg__parameterized0' (14#1) [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/8618/hdl/emc_common_v3_0_vh_rfs.vhd:161]
+INFO: [Synth 8-256] done synthesizing module 'addr_counter_mux' (15#1) [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/8618/hdl/emc_common_v3_0_vh_rfs.vhd:4466]
+INFO: [Synth 8-638] synthesizing module 'counters' [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/8618/hdl/emc_common_v3_0_vh_rfs.vhd:1669]
+INFO: [Synth 8-638] synthesizing module 'ld_arith_reg__parameterized1' [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/8618/hdl/emc_common_v3_0_vh_rfs.vhd:161]
+INFO: [Synth 8-638] synthesizing module 'FDSE' [D:/Vivado/2016.3/scripts/rt/data/unisim_comp.v:4100]
+INFO: [Synth 8-256] done synthesizing module 'FDSE' (16#1) [D:/Vivado/2016.3/scripts/rt/data/unisim_comp.v:4100]
+INFO: [Synth 8-256] done synthesizing module 'ld_arith_reg__parameterized1' (16#1) [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/8618/hdl/emc_common_v3_0_vh_rfs.vhd:161]
+INFO: [Synth 8-638] synthesizing module 'ld_arith_reg__parameterized2' [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/8618/hdl/emc_common_v3_0_vh_rfs.vhd:161]
+INFO: [Synth 8-256] done synthesizing module 'ld_arith_reg__parameterized2' (16#1) [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/8618/hdl/emc_common_v3_0_vh_rfs.vhd:161]
+INFO: [Synth 8-638] synthesizing module 'ld_arith_reg__parameterized3' [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/8618/hdl/emc_common_v3_0_vh_rfs.vhd:161]
+INFO: [Synth 8-256] done synthesizing module 'ld_arith_reg__parameterized3' (16#1) [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/8618/hdl/emc_common_v3_0_vh_rfs.vhd:161]
+INFO: [Synth 8-638] synthesizing module 'ld_arith_reg__parameterized4' [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/8618/hdl/emc_common_v3_0_vh_rfs.vhd:161]
+INFO: [Synth 8-256] done synthesizing module 'ld_arith_reg__parameterized4' (16#1) [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/8618/hdl/emc_common_v3_0_vh_rfs.vhd:161]
+INFO: [Synth 8-638] synthesizing module 'ld_arith_reg__parameterized5' [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/8618/hdl/emc_common_v3_0_vh_rfs.vhd:161]
+INFO: [Synth 8-256] done synthesizing module 'ld_arith_reg__parameterized5' (16#1) [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/8618/hdl/emc_common_v3_0_vh_rfs.vhd:161]
+INFO: [Synth 8-638] synthesizing module 'ld_arith_reg__parameterized6' [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/8618/hdl/emc_common_v3_0_vh_rfs.vhd:161]
+INFO: [Synth 8-256] done synthesizing module 'ld_arith_reg__parameterized6' (16#1) [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/8618/hdl/emc_common_v3_0_vh_rfs.vhd:161]
+INFO: [Synth 8-638] synthesizing module 'ld_arith_reg__parameterized7' [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/8618/hdl/emc_common_v3_0_vh_rfs.vhd:161]
+INFO: [Synth 8-256] done synthesizing module 'ld_arith_reg__parameterized7' (16#1) [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/8618/hdl/emc_common_v3_0_vh_rfs.vhd:161]
+INFO: [Synth 8-256] done synthesizing module 'counters' (17#1) [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/8618/hdl/emc_common_v3_0_vh_rfs.vhd:1669]
+INFO: [Synth 8-638] synthesizing module 'select_param' [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/8618/hdl/emc_common_v3_0_vh_rfs.vhd:3638]
+INFO: [Synth 8-256] done synthesizing module 'select_param' (18#1) [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/8618/hdl/emc_common_v3_0_vh_rfs.vhd:3638]
+INFO: [Synth 8-638] synthesizing module 'mem_steer' [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/8618/hdl/emc_common_v3_0_vh_rfs.vhd:5350]
+INFO: [Synth 8-256] done synthesizing module 'mem_steer' (19#1) [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/8618/hdl/emc_common_v3_0_vh_rfs.vhd:5350]
+INFO: [Synth 8-638] synthesizing module 'io_registers' [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/8618/hdl/emc_common_v3_0_vh_rfs.vhd:1226]
+INFO: [Synth 8-256] done synthesizing module 'io_registers' (20#1) [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/8618/hdl/emc_common_v3_0_vh_rfs.vhd:1226]
+INFO: [Synth 8-256] done synthesizing module 'EMC' (21#1) [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/8618/hdl/emc_common_v3_0_vh_rfs.vhd:8238]
+INFO: [Synth 8-256] done synthesizing module 'axi_emc' (22#1) [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ipshared/af5f/hdl/axi_emc_v3_0_vh_rfs.vhd:3742]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_emc_0_0' (23#1) [d:/Nora/cmod_a7_projects/blabla/blabla.srcs/sources_1/bd/design_1/ip/design_1_axi_emc_0_0/synth/design_1_axi_emc_0_0.vhd:116]
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 419.539 ; gain = 208.961
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 419.539 ; gain = 208.961
+INFO: [Device 21-403] Loading part xc7a15tcpg236-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.109 . Memory (MB): peak = 723.172 ; gain = 1.035
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 723.172 ; gain = 512.594
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 723.172 ; gain = 512.594
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 723.172 ; gain = 512.594
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 723.172 ; gain = 512.594
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 723.172 ; gain = 512.594
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 723.172 ; gain = 512.594
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 723.172 ; gain = 512.594
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 723.172 ; gain = 512.594
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 723.172 ; gain = 512.594
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 723.172 ; gain = 512.594
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 723.172 ; gain = 512.594
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 723.172 ; gain = 512.594
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 723.172 ; gain = 512.594
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 723.172 ; gain = 512.594
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |     3|
+|2     |LUT1     |     5|
+|3     |LUT2     |    69|
+|4     |LUT3     |   129|
+|5     |LUT4     |    44|
+|6     |LUT5     |    94|
+|7     |LUT6     |   197|
+|8     |MULT_AND |    44|
+|9     |MUXCY    |    47|
+|10    |MUXF7    |   142|
+|11    |MUXF8    |    66|
+|12    |SRLC32E  |   264|
+|13    |XORCY    |    56|
+|14    |FDR      |     6|
+|15    |FDRE     |   359|
+|16    |FDSE     |    62|
++------+---------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 723.172 ; gain = 512.594
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 723.172 ; gain = 448.086
