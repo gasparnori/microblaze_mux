@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="design_1_wrapper.bit" key="design_1_wrapper_hw_platform_0-bitFile"/>
+	<item value="D:\Nora\Intan_project\USB\USB.runs\impl_1\design_1_wrapper.bit" key="&lt;None&gt;-bitFile"/>
+	<item value="design_1_wrapper.mmi" key="design_1_wrapper_hw_platform_1-bmmFile"/>
+	<item value="" key="&lt;None&gt;-bmmFile"/>
+	<item value="Auto Detect" key="&lt;None&gt;-device"/>
+	<item value="bootloop" key="design_1_wrapper_hw_platform_0-microblaze_0-initElf"/>
+	<item value="false" key="&lt;None&gt;-partial_bit"/>
+	<item value="design_1_wrapper.mmi" key="design_1_wrapper_hw_platform_0-bmmFile"/>
+	<item value="design_1_wrapper.bit" key="design_1_wrapper_hw_platform_1-bitFile"/>
+	<item value="bootloop" key="design_1_wrapper_hw_platform_1-microblaze_0-initElf"/>
+	<item value="Auto Detect" key="design_1_wrapper_hw_platform_1-device"/>
+	<item value="Local" key="design_1_wrapper_hw_platform_0-target"/>
+	<item value="Local" key="design_1_wrapper_hw_platform_1-target"/>
+	<item value="Auto Detect" key="design_1_wrapper_hw_platform_0-device"/>
+	<item value="design_1_wrapper_hw_platform_0" key="programfpga.hwplatform"/>
+	<item value="Local" key="&lt;None&gt;-target"/>
+	<item value="false" key="design_1_wrapper_hw_platform_0-partial_bit"/>
+	<item value="false" key="design_1_wrapper_hw_platform_1-partial_bit"/>
+</section>

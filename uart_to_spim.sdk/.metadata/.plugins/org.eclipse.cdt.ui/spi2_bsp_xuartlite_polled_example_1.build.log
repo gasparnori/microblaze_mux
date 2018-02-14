@@ -1,0 +1,21 @@
+14:40:58 **** Build of configuration Debug for project spi2_bsp_xuartlite_polled_example_1 ****
+make all 
+'Building file: ../src/xuartlite_polled_example.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xuartlite_polled_example.o" -I../../spi2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/xuartlite_polled_example.d" -MT"src/xuartlite_polled_example.o" -o "src/xuartlite_polled_example.o" "../src/xuartlite_polled_example.c"
+'Finished building: ../src/xuartlite_polled_example.c'
+' '
+'Building target: spi2_bsp_xuartlite_polled_example_1.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi2_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi2_bsp_xuartlite_polled_example_1.elf"  ./src/xuartlite_polled_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: spi2_bsp_xuartlite_polled_example_1.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size spi2_bsp_xuartlite_polled_example_1.elf  |tee "spi2_bsp_xuartlite_polled_example_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8148	    292	   3232	  11672	   2d98	spi2_bsp_xuartlite_polled_example_1.elf
+'Finished building: spi2_bsp_xuartlite_polled_example_1.elf.size'
+' '
+
+14:40:59 Build Finished (took 570ms)
+

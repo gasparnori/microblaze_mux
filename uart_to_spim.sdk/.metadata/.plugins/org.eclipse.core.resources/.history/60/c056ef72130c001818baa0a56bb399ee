@@ -1,0 +1,23 @@
+/*
+ * xst_errors.c
+ *
+ *  Created on: Feb 7, 2018
+ *      Author: Starklab
+ */
+
+#include "xst_errors.h"
+
+
+void interpretError(int status){
+	switch(status)
+			{
+				case XST_DEVICE_NOT_FOUND: printf("Status: Device not found\n\r"); break;
+				case XST_DEVICE_IS_STOPPED: printf("Status: Device stopped\n\r"); break;
+				case XST_DEVICE_BUSY: printf("Status: Device busy\n\r"); break;
+				case XST_SPI_NO_SLAVE: printf("Status: Device no slave\n\r"); break;
+				case XST_SUCCESS: printf(":)\n\r"); break;
+				case XST_FAILURE: printf("Status: Failure\n\r"); break;
+				default: printf("other error...\n\r");break;
+			}
+
+}

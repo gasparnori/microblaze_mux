@@ -1,0 +1,113 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.6.11  2017-06-12 bk=1.3860 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port CS -pg 1 -y 480 -defaultsOSRD
+preplace port SCLK -pg 1 -y 440 -defaultsOSRD
+preplace port LED0 -pg 1 -y 60 -defaultsOSRD
+preplace port MUX_CS -pg 1 -y 200 -defaultsOSRD
+preplace port LED1 -pg 1 -y 100 -defaultsOSRD
+preplace port LED2 -pg 1 -y 140 -defaultsOSRD
+preplace port sys_clock -pg 1 -y 850 -defaultsOSRD
+preplace port CVN0 -pg 1 -y 80 -defaultsOSRD
+preplace port MUX_EN -pg 1 -y 220 -defaultsOSRD
+preplace port usb_uart -pg 1 -y 860 -defaultsOSRD
+preplace port MISO -pg 1 -y 500 -defaultsOSRD
+preplace port CVN1 -pg 1 -y 120 -defaultsOSRD
+preplace port push_buttons_1bit -pg 1 -y 750 -defaultsOSRD
+preplace port MOSI -pg 1 -y 460 -defaultsOSRD
+preplace port CVN2 -pg 1 -y 160 -defaultsOSRD
+preplace port ADC_IN0 -pg 1 -y 160 -defaultsOSRD
+preplace port rgb_led -pg 1 -y 730 -defaultsOSRD
+preplace port ADC_IN1 -pg 1 -y 180 -defaultsOSRD
+preplace port SCK -pg 1 -y 40 -defaultsOSRD
+preplace port MUX_WR0 -pg 1 -y 240 -defaultsOSRD
+preplace port ADC_IN2 -pg 1 -y 200 -defaultsOSRD
+preplace port cellular_ram -pg 1 -y 520 -defaultsOSRD
+preplace port MUX_WR1 -pg 1 -y 260 -defaultsOSRD
+preplace port MUX_WR2 -pg 1 -y 280 -defaultsOSRD
+preplace port reset -pg 1 -y 780 -defaultsOSRD
+preplace portBus MUX_ADDR -pg 1 -y 180 -defaultsOSRD
+preplace inst spi_divider_0 -pg 1 -lvl 3 -y 460 -defaultsOSRD
+preplace inst rst_clk_wiz_0_100M -pg 1 -lvl 4 -y 830 -defaultsOSRD
+preplace inst rst_clk_wiz_0_20M -pg 1 -lvl 3 -y 890 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 5 -y 470 -defaultsOSRD
+preplace inst axi_emc_0 -pg 1 -lvl 6 -y 500 -defaultsOSRD
+preplace inst microblaze_0_axi_periph -pg 1 -lvl 5 -y 870 -defaultsOSRD
+preplace inst gpio_debugger -pg 1 -lvl 1 -y 430 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 6 -y 740 -defaultsOSRD
+preplace inst mdm_1 -pg 1 -lvl 3 -y 750 -defaultsOSRD
+preplace inst debug2gpio_0 -pg 1 -lvl 2 -y 310 -defaultsOSRD
+preplace inst axi_uartlite_0 -pg 1 -lvl 6 -y 870 -defaultsOSRD
+preplace inst microblaze_0 -pg 1 -lvl 4 -y 660 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -y 1440 -defaultsOSRD
+preplace inst microblaze_0_local_memory -pg 1 -lvl 5 -y 620 -defaultsOSRD
+preplace inst SPI_counter_0 -pg 1 -lvl 1 -y 150 -defaultsOSRD
+preplace inst axi_quad_spi_0 -pg 1 -lvl 1 -y 790 -defaultsOSRD
+preplace netloc spi_divider_0_MISO_out 1 3 4 1270 340 NJ 340 NJ 340 2440J
+preplace netloc SPI_counter_0_CVN1 1 1 6 NJ 90 NJ 90 NJ 90 NJ 90 NJ 90 2490J
+preplace netloc SPI_counter_0_MUX_WR1 1 1 6 420J 210 NJ 210 NJ 210 NJ 210 NJ 210 2420J
+preplace netloc ADC_IN1_1 1 0 1 NJ
+preplace netloc spi_divider_0_to_uart_out 1 1 3 450 400 870J 330 1240
+preplace netloc SPI_counter_0_CVN2 1 1 6 NJ 130 NJ 130 NJ 130 NJ 130 NJ 130 2470J
+preplace netloc SPI_counter_0_MUX_WR2 1 1 6 450J 230 NJ 230 NJ 230 NJ 230 NJ 230 2410J
+preplace netloc ADC_IN0_1 1 0 1 NJ
+preplace netloc rst_clk_wiz_0_100M_bus_struct_reset 1 4 1 1820
+preplace netloc clk_wiz_0_locked 1 1 3 430 990 870J 990 1290J
+preplace netloc SPI_counter_0_MISO 1 1 2 N -10 880
+preplace netloc spi_divider_0_MOSI_forward 1 0 4 20 -70 NJ -70 N -70 1250
+preplace netloc spi_divider_0_CS_forward 1 0 4 10 -80 NJ -80 N -80 1260
+preplace netloc axi_quad_spi_0_ss_o 1 1 2 440 450 N
+preplace netloc rst_clk_wiz_0_20M_peripheral_aresetn 1 0 4 30 980 NJ 980 N 980 1240
+preplace netloc SPI_counter_0_Debug_active_read 1 1 1 420
+preplace netloc SPI_counter_0_MUX_ADDR 1 1 6 NJ 150 NJ 150 NJ 150 NJ 150 NJ 150 2460J
+preplace netloc SPI_counter_0_MUX_CS 1 1 6 NJ 170 NJ 170 NJ 170 NJ 170 NJ 170 2450J
+preplace netloc ADC_IN2_1 1 0 1 NJ
+preplace netloc microblaze_0_Clk 1 0 6 30 690 410 690 860J 680 1270J 930 1840 390 2130
+preplace netloc microblaze_0_axi_periph_M03_AXI 1 0 6 10 1060 NJ 1060 NJ 1060 NJ 1060 NJ 1060 2120
+preplace netloc axi_smc_M00_AXI 1 5 1 N
+preplace netloc spi_divider_0_SCLK_out 1 3 4 1290 370 NJ 370 NJ 370 2460J
+preplace netloc microblaze_0_axi_periph_M00_AXI 1 5 1 2120
+preplace netloc microblaze_0_M_AXI_DP 1 4 1 1830
+preplace netloc microblaze_0_M_AXI_DC 1 4 1 1780
+preplace netloc microblaze_0_ilmb_1 1 4 1 1820
+preplace netloc sys_clock_1 1 0 1 -10J
+preplace netloc SPI_counter_0_Debug_ADC_counter 1 1 1 420
+preplace netloc axi_quad_spi_0_io0_o 1 1 2 430 470 N
+preplace netloc SPI_counter_0_SCK 1 1 6 NJ 10 NJ 10 NJ 10 NJ 10 NJ 10 2530J
+preplace netloc axi_emc_0_EMC_INTF 1 6 1 2410J
+preplace netloc debug2gpio_0_toGPIO 1 1 2 N 440 850
+preplace netloc spi_divider_0_SCLK_forward 1 0 4 30 -60 NJ -60 N -60 1220
+preplace netloc axi_quad_spi_0_sck_o 1 1 2 420 430 N
+preplace netloc SPI_counter_0_MUX_EN 1 1 6 NJ 190 NJ 190 NJ 190 NJ 190 NJ 190 2440J
+preplace netloc axi_gpio_0_GPIO2 1 6 1 NJ
+preplace netloc microblaze_0_axi_periph_M01_AXI 1 5 1 2150
+preplace netloc microblaze_0_M_AXI_IC 1 4 1 1810
+preplace netloc SPI_counter_0_Debug_command_read 1 1 1 420
+preplace netloc spi_divider_0_MOSI_out 1 3 4 1300 360 NJ 360 NJ 360 2490J
+preplace netloc SPI_counter_0_LED0 1 1 6 NJ 30 NJ 30 NJ 30 NJ 30 NJ 30 2520J
+preplace netloc rst_clk_wiz_0_100M_mb_reset 1 3 2 1300 920 1780
+preplace netloc axi_gpio_0_GPIO 1 6 1 NJ
+preplace netloc axi_uartlite_0_UART 1 6 1 NJ
+preplace netloc SPI_counter_0_LED1 1 1 6 NJ 70 NJ 70 NJ 70 NJ 70 NJ 70 2500J
+preplace netloc microblaze_0_axi_periph_M02_AXI 1 0 6 20 1050 NJ 1050 N 1050 N 1050 NJ 1050 2130J
+preplace netloc microblaze_0_dlmb_1 1 4 1 1790
+preplace netloc SPI_counter_0_LED2 1 1 6 NJ 110 NJ 110 NJ 110 NJ 110 NJ 110 2480J
+preplace netloc microblaze_0_debug 1 3 1 1250
+preplace netloc rst_clk_wiz_0_100M_interconnect_aresetn 1 4 1 1830
+preplace netloc rst_clk_wiz_0_100M_peripheral_aresetn 1 0 6 20 360 410 390 860 310 N 310 1800 380 2140
+preplace netloc reset_1 1 0 4 0 890 440J 870 880J 690 1230J
+preplace netloc mdm_1_debug_sys_rst 1 3 1 1220J
+preplace netloc spi_divider_0_CS_out 1 3 4 1280 330 NJ 330 NJ 330 2520J
+preplace netloc spi_divider_0_MISO 1 1 3 450 670 N 670 1230
+preplace netloc SPI_counter_0_CVN0 1 1 6 NJ 50 NJ 50 NJ 50 NJ 50 NJ 50 2510J
+preplace netloc SPI_counter_0_MUX_WR0 1 1 6 410J 200 NJ 200 NJ 200 NJ 200 NJ 200 2430J
+levelinfo -pg 1 -30 220 650 1050 1540 1980 2280 2550 -top -160 -bot 1500
+",
+}
+{
+   da_axi4_cnt: "6",
+   da_board_cnt: "4",
+   da_clkrst_cnt: "6",
+   da_mb_cnt: "1",
+}

@@ -1,0 +1,38 @@
+/*
+ * xst_errors.c
+ *
+ *  Created on: Feb 7, 2018
+ *      Author: Starklab
+ */
+
+#include "xst_errors.h"
+
+/*
+#define XST_SUCCESS                     0L
+#define XST_FAILURE                     1L
+#define XST_DEVICE_NOT_FOUND            2L
+#define XST_DEVICE_BLOCK_NOT_FOUND      3L
+#define XST_INVALID_VERSION             4L
+#define XST_DEVICE_IS_STARTED           5L
+#define XST_DEVICE_IS_STOPPED           6L
+#define XST_FIFO_ERROR                  7L
+*/
+void interpretError(int status){
+	switch(status)
+			{
+				case XST_SUCCESS: printf("success:) \n\r"); break; //0L
+				case XST_FAILURE: printf("Status: Failure\n\r"); break; //1L
+				case XST_DEVICE_NOT_FOUND: printf("Status: Device not found\n\r"); break; //2L
+				case XST_DEVICE_BLOCK_NOT_FOUND: printf("Status: Device block not found\n\r"); break; //3L
+				case XST_INVALID_VERSION: printf("Status: Invalid version \n\r"); break; //4L
+				case XST_DEVICE_IS_STARTED: printf("Status: Device started\n\r"); break; //5L
+				case XST_DEVICE_IS_STOPPED: printf("Status: Device stopped\n\r"); break; //6L
+				case XST_FIFO_ERROR: printf("Status: FIFO error\n\r"); break; //6L
+
+
+				case XST_DEVICE_BUSY: printf("Status: Device busy\n\r"); break;
+				case XST_SPI_NO_SLAVE: printf("Status: Device no slave\n\r"); break;
+				default: printf("other error...\n\r");break;
+			}
+
+}

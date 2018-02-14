@@ -1,0 +1,6 @@
+13:50:19 **** Incremental Build of configuration Debug for project spi_out_bsp_xspi_polled_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+
+13:50:19 Build Finished (took 152ms)
+

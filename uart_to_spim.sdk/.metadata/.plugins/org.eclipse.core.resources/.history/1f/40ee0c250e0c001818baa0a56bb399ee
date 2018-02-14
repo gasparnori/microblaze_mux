@@ -1,0 +1,76 @@
+/*
+ * spi_toMUX.c
+ *
+ *  Created on: Jan 30, 2018
+ *      Author: Starklab
+ */
+#include "spi_toMUX.h"
+
+void interpretError(int status){
+	switch(status)
+			{
+				case XST_DEVICE_NOT_FOUND: printf("Status: Device not found\n\r"); break;
+				case XST_DEVICE_IS_STOPPED: printf("Status: Device stopped\n\r"); break;
+				case XST_DEVICE_BUSY: printf("Status: Device busy\n\r"); break;
+				case XST_SPI_NO_SLAVE: printf("Status: Device no slave\n\r"); break;
+				case XST_SUCCESS: printf(":)\n\r"); break;
+				case XST_FAILURE: printf("Status: Failure\n\r"); break;
+				default: printf("other error...\n\r");break;
+			}
+
+}
+int SpiInit(XSpi* Spi, u16 DeviceId)
+{
+	int status=XST_SUCCESS;
+	//if we are after a reset, we need to reset the SPI interface too
+	if (Spi->IsStarted == XIL_COMPONENT_IS_STARTED) {
+		XSpi_Reset(Spi);
+		printf("Resetting SPI\r\n");
+	}
+	else{ 	//If it's the first run, we need to start with initialization
+		XSpi_Config *ConfigPtr;	// Pointer to Configuration data
+		ConfigPtr = XSpi_LookupConfig(DeviceId);
+		if (ConfigPtr == NULL) {
+			interpretError(XST_DEVICE_NOT_FOUND);
+			return XST_DEVICE_NOT_FOUND;
+		}
+
+		status=XSpi_Initialize(Spi, DeviceId);
+		if(status!=XST_SUCCESS){
+			interpretError(status);
+			return status;
+		}
+
+		printf("master settings...");
+		status=XSpi_SetOptions(Spi, XSP_MASTER_OPTION);
+		if(status != XST_SUCCESS) {
+			interpretError(status);
+			return status;
+		};
+
+	}
+
+	status=XSpi_Start(Spi);
+	interpretError(status);
+	status= XSpi_SetSlaveSelect(Spi, 0x1);
+	interpretError(status);
+	printf("Starting SPI...\r\n");
+	XSpi_IntrGlobalDisable(Spi);
+		switch(status)
+				{
+					case XST_SUCCESS: print("I"); break;
+					case XST_DEVICE_IS_STOPPED: print("Status: Device stopped\n\r"); break;
+					case XST_DEVICE_BUSY: print("Status: Device busy\n\r"); break;
+					case XST_SPI_NO_SLAVE: print("Status: Device no slave\n\r"); break;
+				}
+
+	return status;
+}
+
+int SPI_transfer(XSpi *Spi, u8 * data, u8 * received){
+	//this only selects which slave will be used... doesn't initiate the communication...
+	XSpi_Transfer(Spi, data, received, BUFFER_SIZE*2);
+	//print("received 0x%x \r\n", received);
+	return 1;
+}
+

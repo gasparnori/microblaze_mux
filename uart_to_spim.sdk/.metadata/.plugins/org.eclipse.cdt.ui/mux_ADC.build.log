@@ -1,0 +1,6 @@
+11:35:44 **** Incremental Build of configuration Debug for project mux_ADC ****
+make all 
+make: Nothing to be done for `all'.
+
+11:35:44 Build Finished (took 129ms)
+

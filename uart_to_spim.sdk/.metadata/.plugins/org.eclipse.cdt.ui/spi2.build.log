@@ -1,0 +1,6 @@
+15:00:07 **** Auto Build of configuration Debug for project spi2 ****
+make all 
+make: *** No rule to make target `debugger.o', needed by `spi2.elf'.  Stop.
+
+15:00:07 Build Finished (took 124ms)
+

@@ -1,0 +1,74 @@
+18:27:49 **** Auto Build of configuration Debug for project spi2_bsp_xuartlite_intr_tapp_example_1 ****
+make all 
+'Building file: ../src/xuartlite_intr_tapp_example.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xuartlite_intr_tapp_example.o" -I../../spi2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/xuartlite_intr_tapp_example.d" -MT"src/xuartlite_intr_tapp_example.o" -o "src/xuartlite_intr_tapp_example.o" "../src/xuartlite_intr_tapp_example.c"
+../src/xuartlite_intr_tapp_example.c:106:15: error: unknown type name 'XScuGic'
+ #define INTC  XScuGic
+               ^
+../src/xuartlite_intr_tapp_example.c:115:25: note: in expansion of macro 'INTC'
+ int UartLiteIntrExample(INTC *IntcInstancePtr,
+                         ^~~~
+../src/xuartlite_intr_tapp_example.c:106:15: error: unknown type name 'XScuGic'
+ #define INTC  XScuGic
+               ^
+../src/xuartlite_intr_tapp_example.c:124:36: note: in expansion of macro 'INTC'
+ static int UartLiteSetupIntrSystem(INTC *IntcInstancePtr,
+                                    ^~~~
+../src/xuartlite_intr_tapp_example.c:106:15: error: unknown type name 'XScuGic'
+ #define INTC  XScuGic
+               ^
+../src/xuartlite_intr_tapp_example.c:128:39: note: in expansion of macro 'INTC'
+ static void UartLiteDisableIntrSystem(INTC *IntrInstancePtr,
+                                       ^~~~
+../src/xuartlite_intr_tapp_example.c:106:15: error: unknown type name 'XScuGic'
+ #define INTC  XScuGic
+               ^
+../src/xuartlite_intr_tapp_example.c:139:8: note: in expansion of macro 'INTC'
+ static INTC IntcInstance; /* The instance of the Interrupt Controller */
+        ^~~~
+../src/xuartlite_intr_tapp_example.c: In function 'main':
+../src/xuartlite_intr_tapp_example.c:181:11: warning: implicit declaration of function 'UartLiteIntrExample' [-Wimplicit-function-declaration]
+  Status = UartLiteIntrExample(&IntcInstance,
+           ^~~~~~~~~~~~~~~~~~~
+../src/xuartlite_intr_tapp_example.c:84:30: error: 'XPAR_INTC_0_UARTLITE_0_VEC_ID' undeclared (first use in this function)
+ #define UARTLITE_IRPT_INTR   XPAR_INTC_0_UARTLITE_0_VEC_ID
+                              ^
+../src/xuartlite_intr_tapp_example.c:184:6: note: in expansion of macro 'UARTLITE_IRPT_INTR'
+      UARTLITE_IRPT_INTR);
+      ^~~~~~~~~~~~~~~~~~
+../src/xuartlite_intr_tapp_example.c:84:30: note: each undeclared identifier is reported only once for each function it appears in
+ #define UARTLITE_IRPT_INTR   XPAR_INTC_0_UARTLITE_0_VEC_ID
+                              ^
+../src/xuartlite_intr_tapp_example.c:184:6: note: in expansion of macro 'UARTLITE_IRPT_INTR'
+      UARTLITE_IRPT_INTR);
+      ^~~~~~~~~~~~~~~~~~
+../src/xuartlite_intr_tapp_example.c: At top level:
+../src/xuartlite_intr_tapp_example.c:106:15: error: unknown type name 'XScuGic'
+ #define INTC  XScuGic
+               ^
+../src/xuartlite_intr_tapp_example.c:225:25: note: in expansion of macro 'INTC'
+ int UartLiteIntrExample(INTC *IntcInstancePtr,
+                         ^~~~
+../src/xuartlite_intr_tapp_example.c:106:15: error: unknown type name 'XScuGic'
+ #define INTC  XScuGic
+               ^
+../src/xuartlite_intr_tapp_example.c:377:29: note: in expansion of macro 'INTC'
+ int UartLiteSetupIntrSystem(INTC *IntcInstancePtr,
+                             ^~~~
+../src/xuartlite_intr_tapp_example.c:106:15: error: unknown type name 'XScuGic'
+ #define INTC  XScuGic
+               ^
+../src/xuartlite_intr_tapp_example.c:506:39: note: in expansion of macro 'INTC'
+ static void UartLiteDisableIntrSystem(INTC *IntcInstancePtr,
+                                       ^~~~
+../src/xuartlite_intr_tapp_example.c:351:13: warning: 'UartLiteRecvHandler' defined but not used [-Wunused-function]
+ static void UartLiteRecvHandler(void *CallBackRef, unsigned int EventData)
+             ^~~~~~~~~~~~~~~~~~~
+../src/xuartlite_intr_tapp_example.c:323:13: warning: 'UartLiteSendHandler' defined but not used [-Wunused-function]
+ static void UartLiteSendHandler(void *CallBackRef, unsigned int EventData)
+             ^~~~~~~~~~~~~~~~~~~
+make: *** [src/xuartlite_intr_tapp_example.o] Error 1
+
+18:27:49 Build Finished (took 222ms)
+

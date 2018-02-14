@@ -1,0 +1,21 @@
+11:37:03 **** Build of configuration Debug for project spi_out_bsp_xspi_low_level_example_1 ****
+make all 
+'Building file: ../src/xspi_low_level_example.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xspi_low_level_example.o" -I../../spi_out_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/xspi_low_level_example.d" -MT"src/xspi_low_level_example.o" -o "src/xspi_low_level_example.o" "../src/xspi_low_level_example.c"
+'Finished building: ../src/xspi_low_level_example.c'
+' '
+'Building target: spi_out_bsp_xspi_low_level_example_1.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_out_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_out_bsp_xspi_low_level_example_1.elf"  ./src/xspi_low_level_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: spi_out_bsp_xspi_low_level_example_1.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size spi_out_bsp_xspi_low_level_example_1.elf  |tee "spi_out_bsp_xspi_low_level_example_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6256	    272	   3168	   9696	   25e0	spi_out_bsp_xspi_low_level_example_1.elf
+'Finished building: spi_out_bsp_xspi_low_level_example_1.elf.size'
+' '
+
+11:37:04 Build Finished (took 623ms)
+
